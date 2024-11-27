@@ -1,20 +1,46 @@
-############### AI Innovation 3.0 Hackathon by Yamaha and IIT Mandi ####
+# AI Innovation 3.0 Hackathon by Yamaha and IIT Mandi
 
+This repository contains the implementation for training and testing classification models on two datasets: **Alphanumeric** and **Animals10**. Additionally, it includes a Flask-based web interface for visualizing predictions.
 
-We have 2 datasets in Folder "Datasets"
-    1. alphanuemric_dataset/alphanumeric_dataset
-        ---- Train
-        ---- Validation
-    2. Animals10
-        ---- raw-img
+---
 
-You need to create directories like above for training.
+## **Datasets**
 
-Model is built using Python 3.8.5
-To install correct packages, run <font color="green"> pip install requirement.txt </font>
+### 1. **Alphanumeric Dataset**
+Path: `alphanuemric_dataset/alphanumeric_dataset`  
+- Contains two subdirectories:
+  - `Train`
+  - `Validation`
 
-To train the model on alphanumeric datasets run following command
- " python class_alphanumeric.py "
+### 2. **Animals10 Dataset**
+Path: `Animals10/raw-img`  
+- Contains raw images for classification.
+
+Ensure datasets are organized in the same structure before proceeding with training or testing.
+
+---
+
+## **Setup Instructions**
+
+1. **Environment**  
+   - Python version: **3.8.5**
+   - Install the required packages by running:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+2. **Directory Structure**  
+   Create directories as described above for seamless training and testing.
+
+---
+
+## **Training**
+
+### Alphanumeric Dataset
+Run the following command to train the model on the **Alphanumeric Dataset**:
+```bash
+python class_alphanumeric.py
+
 
 
 To train the model on Animal datasets run following command
